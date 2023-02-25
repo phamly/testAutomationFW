@@ -14,6 +14,8 @@ The automation is built from Cucumber and Selenium Javascript. The following ite
 
 - Download and store the appropriate web driver and add the path of this web driver to the path of the machine's system
 
+- Copy the the folder testFiles and its files from this loaction https://drive.google.com/drive/folders/1cXgHKnDXxzfWKD33WmInejJbaVX-Qs8e and add it into the project root folder
+
 2. Project structure:
 
 This framework follows a very simple project structure:
