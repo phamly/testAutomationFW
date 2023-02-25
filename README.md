@@ -14,7 +14,7 @@ The automation is built from Cucumber and Selenium Javascript. The following ite
 
 - Download and store the appropriate web driver and add the path of this web driver to the path of the machine's system
 
-1. Project structure:
+2. Project structure:
 
 This framework follows a very simple project structure:
 
@@ -26,14 +26,14 @@ This framework follows a very simple project structure:
 - node\_modules: the folders of npm and dependency packages
 - report: folder contains the test reports
 
-README: the file for Instructions of how to set up and run the test
+- README: the file for Instructions of how to set up and run the test
 
 - testFiles: contains the data test – the files use for testing uploading
 - reportRunner.js: this file is for view the html reports.
 
 ![](https://raw.githubusercontent.com/phamly/testAutomationFW/main/screenshots/folder_structure.png)
 
-1. Run test scripts
+3. Run test scripts
 
 - By default, the tests will be run on Firefox. If you wish to run with Chrome, update the value of 'browserName' to 'chrome' in the commonVariable.js file
 
@@ -43,7 +43,7 @@ README: the file for Instructions of how to set up and run the test
 
 - Html reports are stored at testAutomationFW\reports
 
-1. View report
+4. View report
 
 To view the report, run this command: _ **node reportRunner.js** _ Below is the test report of upload features.
 
