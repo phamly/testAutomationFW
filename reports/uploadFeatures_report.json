@@ -1,0 +1,645 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "upload-feature---negative-cases;upload-with-a-file-more-than-196.45-mb",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Upload with a file more than 196.45 MB",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2033055791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Go to the upload page",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17221516958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Choose a file \"testFiles/largefile.mp4\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34496083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Select the I accept terms of service",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237267999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Click on button Submit File",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224434374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify uploading with a file more than 196.45 MB is unsuccessful with message 'Select file to send(max 196.45 MB).'",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:43"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 12808124,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -1 file has been successfully uploaded.\n    +Select file to send(max 196.45 MB).\n\n    at World.<anonymous> (/Users/phamly/Documents/Selenium_Automation/testAutomationFW/features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:47:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 407304416
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-feature---negative-cases;upload-without-choosing-a-file",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Upload without choosing a file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1948768833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Go to the upload page",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5752143875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "Select the I accept terms of service",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256957417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "Click on button Submit File",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214801792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Verify uploading without \"choosing a file\" is unsuccessful with message 'Please choose a valid file.'",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:50"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20618625,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -1 file has been successfully uploaded.\n    +Please choose a valid file.\n\n    at World.<anonymous> (/Users/phamly/Documents/Selenium_Automation/testAutomationFW/features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:54:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 388372249
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-feature---negative-cases;upload-without-accepting-terms-of-service",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Upload without accepting terms of service",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1870140125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "Go to the upload page",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9363091375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Choose a file \"testFiles/zerofile.txt\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17592791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "Click on button Submit File",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235722374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify uploading without \"accepting terms of service\" is unsuccessful with message 'Please accept to terms of service.'",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:50"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 22733165,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -1 file has been successfully uploaded.\n    +Please accept to terms of service.\n\n    at World.<anonymous> (/Users/phamly/Documents/Selenium_Automation/testAutomationFW/features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:54:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 416377834
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "upload-feature---negative-cases",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Upload feature - Negative cases",
+    "tags": [],
+    "uri": "features/uploadFiles/uploadFailed.feature"
+  },
+  {
+    "description": "  As a user, I want to upload files to the website",
+    "elements": [
+      {
+        "description": "",
+        "id": "upload-features;upload-a-video-file",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Upload a video file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1903027291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Go to the upload page",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15133131166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Choose a file \"testFiles/abc.mp4\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21444208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Select the I accept terms of service",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236631249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Click on button Submit File",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225208541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify the \"mp4\" file has been successfully uploaded with message \"1 file has been successfully uploaded.\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14877833
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 308776124
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-features;upload-an-image-file",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Upload an image file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1843461958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Go to the upload page",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7443420500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Choose a file \"testFiles/image.png\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16595792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Select the I accept terms of service",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231859499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Click on button Submit File",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 226653917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify the \"png\" file has been successfully uploaded with message \"1 file has been successfully uploaded.\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14731665
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 412230875
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-features;upload-a-document-file",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Upload a document file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1811675582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Go to the upload page",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9155877207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Choose a file \"testFiles/Hunger_Ly.docx\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27327249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Select the I accept terms of service",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236660457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Click on button Submit File",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222837709
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify the \"docx\" file has been successfully uploaded with message \"1 file has been successfully uploaded.\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12866083
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 408169167
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-features;upload-a-file-with-zero-size",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Upload a file with zero size",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1977466458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Go to the upload page",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8668210291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Choose a file \"testFiles/zerofile.txt\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24541208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Select the I accept terms of service",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230294165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Click on button Submit File",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 223508042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Verify the \"zero size\" file has been successfully uploaded with message \"1 file has been successfully uploaded.\"",
+            "match": {
+              "location": "features/step-definitions/uploadFiles-steps/uploadFeatureSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10327750
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 409405834
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "upload-features",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Upload features",
+    "tags": [],
+    "uri": "features/uploadFiles/uploadPassed.feature"
+  }
+]
